@@ -1,11 +1,13 @@
 ---
 layout: post
-title: new site need further modification tags: [gridengine, flexlm]
+title: new site need further modification 
+
+tags: [gridengine, flexlm]
 ---
 
-A new version of my FlexLM / GridEngine integration has been released. The
-version 2009-10-12 supersede previous releases. It is primarily a bugfix
-version (triad handling), with other minor improvements.
+so great such a site established by github.
+
+my home page:homepage.fudan.edu.cn/sunyun
 
 The download files formerly known as **qlicserver** can now be found as a
 more generic **flex-grid**. The name change reflects the fact that it might
