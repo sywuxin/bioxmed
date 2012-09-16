@@ -3,18 +3,14 @@ layout: default
 title:  About
 ---
 
-### This site ###{: class="vlist"}
-
-Born out of necessity (to get github project pages working), I figured
-blogging may even prove a useful means of noting things that would otherwise
-get buried in mailing lists.
+### This site ###{: class="vlist"}focus on biomedicine.
 
 ### About me ###{: class="vlist"}
 
-My background is in [Computational Fluid
-Dynamics](http://en.wikipedia.org/wiki/Computational_fluid_dynamics).
+My background is in [biochemistry and nanomedicine](http://homepage.fudan.edu.cn/sunyun).
 
-I am well-versed in Perl, which I consider an excellent tool for data
+
+new site need further edition. I am well-versed in Perl, which I consider an excellent tool for data
 munging and for a variety of other tasks. Since starting to use OpenFOAM for
 CFD calculations a few years ago, I have also upgraded my C++ skills to
 match. As a further outcome of practicing CFD, which generally requires
