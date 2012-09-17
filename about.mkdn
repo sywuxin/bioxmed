@@ -5,7 +5,8 @@ title:  About
 
 ### About me ###{: class="vlist"}
 
-My background is in [biochemistry and nanomedicine](http://homepage.fudan.edu.cn/sunyun).
+Yun SUN was born in 1982 in MengYin, China. He received his B.S. degree in Biotechnology at Yantai University. He then moved to the Donghua University, where he studied magnetic targeted Photodynamic Therapy. In 2009, he moved to Fudan University and obtained his Ph.D. in chemistry under the supervision of Prof. Chunhui Huang and prof. Fuyou Li. Now he is a postdoctoral researcher at School of Pharmacy of Fudan University. His current research is centered on preclinical research of upconversion nanophosphors as *in vivo* imaging contrasts, including its multifunctionality, safety assessment, and potential applications.
+
 
 
 
