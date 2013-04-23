@@ -7,6 +7,9 @@ title:  About
 
 Yun SUN was born in 1982 in MengYin, shandong, China. He received his B.S. degree in Biotechnology at Yantai University. He then moved to the Donghua University, where he studied magnetic targeted Photodynamic Therapy. In 2009, he moved to Fudan University and obtained his Ph.D. in chemistry under the supervision of Prof. Chunhui Huang and prof. Fuyou Li. Now he is a postdoctoral researcher at Department of chemistry and School of Pharmacy of Fudan University. His current research is centered on preclinical research of upconversion nanophosphors as *in vivo* imaging contrasts, including its multifunctionality, safety assessment, and potential applications. Recently, a new method was under development to accelerate the quick excretion of UCNP. 
 
+- **weibo:www.weibo.com/bioxmed**
+- **mail:sunyun@fudan.edu.cn**
+- [google scholar](http://scholar.google.com/citations?hl=en&user=W9pDM6UAAAAJ "google scholar")
 
 
 ### Publications ###{: class="vlist"}
@@ -14,7 +17,6 @@ Yun SUN was born in 1982 in MengYin, shandong, China. He received his B.S. degre
 **基金**
 
 - 孙筠，熊丽琴。复旦大学重点学科和交叉学科创新人才培养计划暨创新基金第一批交叉学科资助项目。
-
 - 孙筠。第52批博士后科学基金面上资助。
 
 **论文**
@@ -50,8 +52,7 @@ Yun SUN was born in 1982 in MengYin, shandong, China. He received his B.S. degre
 - 赵圣印，钦维民，陈志龙，牟世伟，孙筠。3-酰胺基-4-吲哚马来酰亚胺化合物及其制备方法和应用。公开号：101348482（已授权）
 - 赵圣印，卿凤翎，陈志龙，张海泉，孙筠。3-氨基-4-吲哚-N-甲基马来酰亚胺化合物、其制备及应用。公开号：101475563
 
-weibo: www.weibo.com/bioxmed
-mail: sunyun@fudan.edu.cn
+
 
 <small class="meta final">
 The site content is managed in a
