@@ -8,15 +8,6 @@ body {
     font-size: 16px;
 }
 
-<style type="text/css">
-
-.truncate {
-    width: 250px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-</style>
 
 body, a {
     color: #333;
