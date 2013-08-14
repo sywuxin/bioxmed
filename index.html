@@ -1,98 +1,34 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title:  blog, ideas, etc.
+---
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="孙筠的研究笔记@bioXmed : 朝闻道，夕死可矣" />
+{% for post in paginator.posts %}
+  <h3 class="excerpt"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <p class="excerpt">
+    {{ post.content | strip_html | truncatewords: 100 }} &nbsp;
+    <a href="{{ post.url }}" class="read-more">read more</a>
+  </p>
+  <small class="meta">
+    {{ post.date | date:"%d %b %Y" }}
+    {% for t in post.tags %}
+    {% if forloop.first == true %} | {% endif %}
+    <a href="/tags#{{ t | escape }}">{{ t }}</a>{% if forloop.last == false %}, {% endif %}
+    {% endfor %}
+  </small>
+{% endfor %}
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<div class="paging">
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="older">Older Posts</a>
+  {% endif %}
+{% if paginator.previous_page %}
+  {% if paginator.previous_page == 1 %}
+    <a href="/" class="newer">Newer Posts</a>
+  {% else %}
+    <a href="/page{{paginator.previous_page}}" class="newer">Newer Posts</a>
+  {% endif %}
+{% endif %}
 
-    <title>孙筠的研究笔记@bioXmed</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/sywuxin/bioxmed">View on GitHub</a>
-
-          <h1 id="project_title">孙筠的研究笔记@bioXmed</h1>
-          <h2 id="project_tagline">朝闻道，夕死可矣</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/sywuxin/bioxmed/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/sywuxin/bioxmed/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="about-me" class="anchor" href="#about-me"><span class="octicon octicon-link"></span></a>About me</h1>
-
-<blockquote>
-<p>Yun SUN was born in 1982 in MengYin, shandong, China. He received his B.S. degree in Biotechnology at Yantai University. He then moved to the Donghua University, where he studied magnetic targeted Photodynamic Therapy. In 2009, he moved to Fudan University and obtained his Ph.D. in chemistry under the supervision of Prof. Chunhui Huang and prof. Fuyou Li. Now he is a postdoctoral researcher at Department of chemistry and School of Pharmacy of Fudan University. His current research is centered on preclinical research of upconversion nanophosphors as in vivo imaging contrasts, including its multifunctionality, safety assessment, and potential applications. Recently, a new method was under development to accelerate the quick excretion of UCNP.<br>
-weibo:<a href="http://www.weibo.com/bioxmed">www.weibo.com/bioxmed</a><br>
-mail:<a href="mailto:sunyun@fudan.edu.cn">sunyun@fudan.edu.cn</a><br><a href="http://scholar.google.com/citations?hl=en&amp;user=W9pDM6UAAAAJ">google scholar profile</a></p>
-</blockquote>
-
-<hr><h1>
-<a name="%E5%9F%BA%E9%87%91" class="anchor" href="#%E5%9F%BA%E9%87%91"><span class="octicon octicon-link"></span></a>基金</h1>
-
-<ol>
-<li>孙筠，熊丽琴。复旦大学重点学科和交叉学科创新人才培养计划暨创新基金第一批交叉学科资助项目。<br>
-</li>
-<li>孙筠。第52批博士后科学基金面上资助。</li>
-</ol><hr><h1>
-<a name="%E8%AE%BA%E6%96%87" class="anchor" href="#%E8%AE%BA%E6%96%87"><span class="octicon octicon-link"></span></a>论文</h1>
-
-<ul>
-<li>Yun Sun, Chunhui Huang, Fuyou Li, et al.. Fluorine-18 labeled rare-earth nanoparticles for positron emission tomography (PET) imaging of sentinel lymph node. Biomaterials, 32(11), 2011 ,2999-3007.</li>
-<li>Yun Sun, Juanjuan Peng, Fuyou Li, et al.. Upconversion NaLuF4:Yb,Tm nanophosphors for real-time upconversion luminescence imaging under ambient light and high-resolution X-ray CT imaging Theranostics 2012.DOI:10.7150/thno.5137</li>
-<li>Yun Sun, Juanjuan Peng, Fuyou Li, et al..Radioisotope post-labeling upconversion nanophosphors for in vivo quantitative tracking. DOI: 10.1016/j.biomaterials.2012.11.047</li>
-<li>Yun Sun, Zhilong Chen, et al.. Magnetic chitosan nanoparticles as a drug delivery system for targeting photodynamic therapy. Nanotech., 20(13), 2009, 135102.</li>
-<li>Zhilong Chen, Yun Sun, et al.. Studies on Preparation of Photosensitizer Loaded Magnetic Silica Nanoparticles and Their Anti-Tumor Effects for Targeting Photodynamic Therapy. Nanoscale research letters, 2009, 4(5), 400-408.</li>
-<li>JuanJuan Peng, Yun Sun，Wei Feng, Fuyou Li, Upconversion nanoparticles dramatically promote plant growth without toxicity. Nano Res 2012, 1-13.</li>
-<li>Yang Yang, Yun Sun, Wei Feng, Fuyou Li, Hydrothermal synthesis of NaYF4:153Sm,Yb,Tm nanoparticles and their application in dual-modality upconversion luminescence and spect bioimaging. Biomaterials 2013, 34 (3), 774-83.</li>
-<li>Yang Yang, Yun Sun, Wei Feng, Fuyou Li, Long-term in vivo biodistribution and toxicity of Gd(OH)(3) nanorods. Biomaterials 2013, 34 (2), 508-15.</li>
-<li>Qian Liu, Yun Sun, Fuyou Li et al. 18F-labeled magnetic-upconversion nanophosphors via rare-earth cation-assisted ligand assembly. ACS Nano, 5(4), 2011, 3146–3157.</li>
-<li>Jing Zhou, Yun Sun, Fuyou Li et al. Dual-modality in vivo imaging using rare-earth nanocrystals with near-infrared to near-infrared (NIR-to-NIR) upconversion luminescence and magnetic resonance properties. Biomaterials, 31(12), 2010, 3287-3295.</li>
-<li>Qian Liu, Yun Sun, Fuyou Li et al. Sub-10 nm hexagonal lanthanide-doped NaLuF4 upconversion nanocyrstals for sensitive bioimaging in vivo. J. Am. Chem.Soc., 133(43), 2011, 17122-17125.</li>
-<li>Tianshe Yang, Yun Sun, Fuyou Li et al. Cubic sub-20 nm NaLuF4-based upconversion nanophosphors for high-contrast bioimaging in different animal species. Biomaterials, 33(14), 2012, 3733-3742.</li>
-<li>Qian Liu, Min Chen, Yun Sun, Fuyou Li et al. Multifunctional rare-earth self-assembled nanosystem for tri-modal upconversion luminescence /fluorescence /positron emission tomography imaging. Biomaterials, 32(32), 2011, 8243-8253.
-Chunyan Li, Mengxiao Yu, Yun Sun, Fuyou Li et al. A nonemissive iridium(iii) complex that specifically lights-up the nuclei of living cells. J. Am. Chem. Soc,133(29), 2011, 11231-11239.
-Hong Yang, Yeming Zhuang, Yun Sun, Xiangyang Shi, Fuyou Li, Shiping Yang et al. Targeted dual-contrast T1and T2-weighted magnetic resonance imaging of tumors using multifunctional gadolinium-labeled superparamagnetic iron oxide nanoparticles, Biomaterials, 32(20), 2011, 4584-4893.
-Jing Zhou, Mengxiao Yu, Yun Sun, Fuyou Li et al. Fluorine-18-labeled Gd3+/Yb3+/Er3+ co-doped NaYF4 nanophosphors for multimodality PET/MR/UCL imaging. Biomaterials, 32(4), 2011, 1148-1156.
-Weili Jiang, Yuan Gao, Yun Sun, Zuqiang Bian, Fuyou Li, Jiang Bian, Chunhui Huang et al. Zwitterionic iridium complexes: synthesis, luminescent properties, and their application in cell imaging. Inorg. Chem., 49(7), 2010, 3252-3260.</li>
-</ul><hr><h1>
-<a name="%E4%B8%93%E5%88%A9" class="anchor" href="#%E4%B8%93%E5%88%A9"><span class="octicon octicon-link"></span></a>专利</h1>
-
-<ul>
-<li>李富友，孙筠，余梦晓，周晶。一种18F标记纳米粒子的制备方法及其应用。申请号：201010202271.7</li>
-<li>李富友，李春炎，余梦晓，孙筠，吴勇权，黄春辉。一类弱配位键的离子型铱配合物及其制备方法和应用。申请号：201010177538.1</li>
-<li>陈志龙，杨晓霞，杨君，吕书晴，郑梅珍，孙筠，杨樟卫，陶苏江，康惠馨，吴忠明。一种叶绿素衍生物、其制备方法及在医农药领域的应用。公开号：101143866（已授权）</li>
-<li>陈志龙，郑梅珍，丁志楼，孙筠，杨晓霞。TNFSF13作为光敏剂药靶的肿瘤光动力疗法光敏剂的筛选方法。公开号：101665831（已授权）</li>
-<li>陈志龙，郑梅珍，丁志楼，孙筠，杨晓霞。DNA损伤修复基因MSH2作为靶标基因的肿瘤光动力疗法光敏剂的筛选方法。公开号：101665830</li>
-<li>陈志龙，辛婷，杨晓霞，田娟，郄骊，高丽，张丹萍，张薇莉，孙筠。2′-羧基-4′-氟联苯杂螺环酮化合物及其制备和应用。公开号：101318934（已授权）</li>
-<li>赵圣印，钦维民，陈志龙，牟世伟，孙筠。3-酰胺基-4-吲哚马来酰亚胺化合物及其制备方法和应用。公开号：101348482（已授权）</li>
-<li>赵圣印，卿凤翎，陈志龙，张海泉，孙筠。3-氨基-4-吲哚-N-甲基马来酰亚胺化合物、其制备及应用。公开号：101475563</li>
-</ul>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">孙筠的研究笔记@bioXmed maintained by <a href="https://github.com/sywuxin">sywuxin</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+  <div class="clear"></div>
+</div>
