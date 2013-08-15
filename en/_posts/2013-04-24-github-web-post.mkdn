@@ -1,0 +1,12 @@
+---
+layout: post
+title: 在线github pages发布 
+
+tags: [github]
+---
+
+教育网内github for windows客户端十分难用，无法连接github进行clone等操作，但好在可以在服务器端发布简单的blog。很简单，直接进入github网站上自己的文件夹_posts，创建新文件，然后按照格式编辑即可。本篇文章就是用此方法进行发布的。
+
+这样，只需要下载一个markdownpad编辑器就可以了。
+
+PS: 切记要文件名后面要加上".mkdn",不然无法读取。

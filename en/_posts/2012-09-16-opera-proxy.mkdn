@@ -1,0 +1,20 @@
+---
+layout: post
+title: 方便实用的Opera多代理切换新方法 
+
+tags: [opera, proxy]
+---
+
+不同学校的图书馆的权限不同，教育网和公网的环境也不同，在这种环境频繁切换的情况下，代理的频繁切换将会十分复杂。比如，同一个网站在不同环境打开就需要不同代理，根据不同需求也需要不同代理。因此PAC等所谓智能切换就不适用了。我一直使用a.shun和judes的方法切换，但他们的方法也存在一些问题，比如按钮太小，点起来很费眼，而且编写比较复杂，有许多是不需要的功能，大多同学是没有时间去折腾的。
+
+以下介绍一个不需要添加按钮，通过F12切换的方法，引自这里。并提供复旦和北大图书馆的代理。如下：
+
+用记事本打开opera\ui\ 下面的standard menu.ini，在Quick Preferences Menu下面添加以下代码：
+
+> Item, "HTTP fudan lib" = Set preference, "Proxy|HTTP server=202.120.224.4:8080" 
+
+> Item, "HTTP pku lib" = Set preference, "Proxy|HTTP server=proxy.pku.edu.cn:8080"
+
+效果如图：
+
+![](http://files.myopera.com/Tamil/Blogs/O%20Proxy%20Servers%20in%20Quick%20Preferences.png)
